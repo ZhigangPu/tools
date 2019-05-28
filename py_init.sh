@@ -1,4 +1,8 @@
 #! /bin/bash
+# author: Ayron.Pu
+# history: 
+#       20190528: birth
+
 
 init_project_dir() {
     mkdir config
