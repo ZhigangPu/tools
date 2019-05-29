@@ -8,8 +8,9 @@ init_project_dir() {
     mkdir config
     mkdir log
     mkdir src
-    mkdir lib
     mkdir scripts
+    mkdir scripts/lib
+    touch scripts/lib/__init__.py
 }
 
 touch_ignore() {
