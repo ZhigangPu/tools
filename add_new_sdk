@@ -1,0 +1,17 @@
+#! /bin/bash
+# author: Ayron.Pu
+# Program
+#   touch a pair of header and class file of a new sdk
+
+SRC_HOME=$1
+SDK_NAME=$2
+
+
+main() {
+    touch ${SRC_HOME}/${SDK_NAME}.cpp
+    printf "// author: Ayron.Pu\n\n#include \"${SDK_NAME}.h\"\n" > ${SRC_HOME}/${SDK_NAME}.cpp
+    touch ${SRC_HOME}/${SDK_NAME}.h
+    printf "// author: Ayron.Pu\n\n#include <sdk.h>\ninclude \"common/logger.h\"\n#include <string>\n#include <vector>" > ${SRC_HOME}/${SDK_NAME}.h
+}
+
+main $1 $2
